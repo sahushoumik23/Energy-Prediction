@@ -4,8 +4,8 @@ from datetime import datetime, date, timedelta
 import plotly.graph_objs as go
 import webbrowser
 
-app = Dash()
-server=app.server
+app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div(
     [
         html.H1(children="Energy for Saram,Tamilnadu", style={"textAlign": "center"}),
@@ -49,5 +49,5 @@ app.layout = html.Div(
 
 get_callbacks(app)
 
-webbrowser.open('http://localhost:8050')
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=False)

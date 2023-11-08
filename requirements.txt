@@ -2,3 +2,4 @@ requests
 dash
 pandas
 plotly
+gunicorn

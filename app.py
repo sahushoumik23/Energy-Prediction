@@ -4,7 +4,7 @@ from datetime import datetime, date, timedelta
 import plotly.graph_objs as go
 import webbrowser
 
-app = dash.Dash(__name__)
+app = Dash(__name__)
 server = app.server
 app.layout = html.Div(
     [

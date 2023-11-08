@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import webbrowser
 
 app = Dash()
-
+server=app.server
 app.layout = html.Div(
     [
         html.H1(children="Energy for Saram,Tamilnadu", style={"textAlign": "center"}),
